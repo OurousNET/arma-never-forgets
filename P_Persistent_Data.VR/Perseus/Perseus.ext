@@ -1,0 +1,74 @@
+class CfgFunctions
+	{
+		#include "Functions\Perseus_Functions.hpp"
+	};
+
+class CfgDebriefing
+{
+	class End1
+	{
+		title = "Mission Accomplished";
+		subtitle = "";
+		description = "This success will greatly help our cause. Well done Soldiers!";
+		pictureBackground = "Perseus\Images\Win.jpg";
+		picture = "";
+		pictureColor[] = {0.0,0.0,0.0,1};
+	};
+	class End2
+	{
+		title = "Mission Failed";
+		subtitle = "";
+		description = "You Failed to complete the mission assigned. OzDeaDMeaT's advice?.... 'Suck Less!!'";
+		pictureBackground = "Perseus\Images\Fail.jpg";
+		picture = "";
+		pictureColor[] = {0.0,0.0,0.0,1};
+	};
+	class VIP_ONLY
+	{
+		title = "VIP ONLY SLOT";
+		subtitle = "";
+		description = "This is a reserved slot for VIP members only. Please rejoin using a different slot. Reserved slots are clearly marked on each units description in the lobby as ( VIP ONLY SLOT )";
+		pictureBackground = "Perseus\Images\accessdenied.jpg";
+		picture = "";
+		pictureColor[] = {0.0,0.0,0.,1};
+	};
+	class GM_ONLY
+	{
+		title = "GAME MASTER ONLY SLOT";
+		subtitle = "";
+		description = "This is a reserved slot for Game Masters only.  Please rejoin using a different slot. Reserved slots are clearly marked on each units description in the lobby as ( PRIMARY GM SLOT )";
+		pictureBackground = "Perseus\Images\accessdenied.jpg";
+		picture = "";
+		pictureColor[] = {0.0,0.0,0.,1};
+	};
+	class AWAITING_GM
+	{
+		title = "AWAITING GM";
+		subtitle = "";
+		description = "Awaiting GM to select a mission to load. Please wait until he gives the word to join the server";
+		pictureBackground = "Perseus\Images\accessdenied.jpg";
+		picture = "";
+		pictureColor[] = {0.0,0.0,0.,1};
+	};
+	class BANNED
+	{
+		title = "BANNED";
+		subtitle = "";
+		description = "Not sure what you did, but it can't be good.";
+		pictureBackground = "";
+		picture = "";
+		pictureColor[] = {0.0,0.0,0.,1};
+	};
+};
+	
+#include "Interface\Util.hpp"
+#include "Interface\Defs.hpp"
+#include "Interface\Base.hpp"
+#include "Interface\Meta.hpp"
+
+#include "Interface\Layout\CharacterSheet.hpp"
+#include "Interface\Layout\DogTag.hpp"
+#include "Interface\Layout\ControlPanel.hpp"
+
+
+

@@ -1,0 +1,3 @@
+enableDebugConsole = 2;
+respawnOnStart = 0;
+#include "Perseus\Perseus.ext"

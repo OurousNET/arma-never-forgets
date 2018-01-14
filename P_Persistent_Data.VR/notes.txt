@@ -1,0 +1,6 @@
+Marksmanship	-	setUnitRecoilCoefficient
+Weapon Handling	-	setCustomAimCoef 
+Physical Training -	setAnimSpeedCoef , setUnitTrait {loadCoef}
+Stealth			-	setUnitTrait {audibleCoef, camouflageCoef}
+
+				
