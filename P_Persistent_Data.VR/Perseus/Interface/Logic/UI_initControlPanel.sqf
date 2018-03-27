@@ -12,6 +12,8 @@ hint format["%1", count (allControls _disp)];
 _mapCtrl = _disp displayCtrl 101;
 _listCtrl = _disp displayCtrl 100;
 
+
+_mapCtrl call perseus_fnc_ui_asyncMapListener;
 _listCtrl call perseus_fnc_ui_refreshPlayerList;
 
 /*
