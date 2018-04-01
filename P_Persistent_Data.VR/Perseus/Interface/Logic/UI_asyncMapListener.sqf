@@ -13,7 +13,9 @@ _map ctrlAddEventHandler ["mouseButtonClick", {
 		["_ctrlState", false, [true]],
 		["_altState", false, [true]]
 	];
-	player setPos (_map ctrlMapScreenToWorld [_xPos, _yPos]);
+	if (_altState) then {
+		player setPos (_map ctrlMapScreenToWorld [_xPos, _yPos]);
+	};
 	true
 }];
 
