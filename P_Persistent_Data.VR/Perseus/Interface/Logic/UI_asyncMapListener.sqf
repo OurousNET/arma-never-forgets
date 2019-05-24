@@ -20,7 +20,7 @@ _map ctrlAddEventHandler ["mouseButtonClick", {
 }];
 
 waitUntil {
-	isNull uiNamespace getVariable perseus_val_ui_activeDisplay;
+	isNull (uiNamespace getVariable "perseus_val_ui_activeDisplay");
 };
 
 _map ctrlRemoveAllEventHandlers "mouseButtonClick";

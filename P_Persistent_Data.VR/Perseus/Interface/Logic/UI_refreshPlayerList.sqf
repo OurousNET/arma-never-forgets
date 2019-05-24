@@ -6,6 +6,7 @@ params [
 //_listCtrl lbAdd "Jimmy Jones";
 lbClear _listCtrl;
 _players = allPlayers - entities "HeadlessClient_F";
+//_players = if ((count _players) == 0) then {call BIS_fnc_listPlayers} else {_players};
 {_listCtrl lbAdd (name _x);} forEach _players;
 /*
 _players = _players apply {[profileName _x, getPlayerUID _x];};

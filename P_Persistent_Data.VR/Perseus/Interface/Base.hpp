@@ -8,12 +8,12 @@ class Text
 	colorText[] = {1,1,1,1};
 	colorBackground[] = {1,1,1,0};
 	font = "PuristaMedium";
-	sizeEx = 0.05;
+	sizeEx = GUI_TEXT_SIZE_HEAVY;
 	shadow = 2;
 	text = "";
 }
 
-class Button
+class ActiveText
 {
 	idc = nullptr;
 	access = false;
@@ -35,6 +35,34 @@ class Button
 	borderSize = false;
 	text = "";
 }
+class Button
+{
+	idc = nullptr;
+	access = false;
+	type = CT_BUTTON;
+	style = ST_CENTER;
+	text = "";
+	font = GUI_FONT_NORMAL;
+	sizeEx = GUI_TEXT_SIZE_NORMAL;
+	colorText[] = RGB_ARR_White;
+	colorDisabled[] = RGB_ARR_White;
+	colorBackground[] = RGB_ARR_Black;
+	colorBackgroundDisabled[] = RGB_ARR_None;
+	colorBackgroundActive[] = RGB_ARR_None;
+	offsetX = 0.004;
+	offsetY = 0.004;
+	offsetPressedX = 0.002;
+	offsetPressedY = 0.002;
+	colorFocused[] = RGB_ARR_White;
+	colorShadow[] = RGB_ARR_Black;
+	shadow = false;
+	colorBorder[] = RGB_ARR_Zero;
+	borderSize = false;
+	soundEnter[] = {"",0.1,1};
+	soundPush[] = {"",0.1,1};
+	soundClick[] = {"",0.1,1};
+	soundEscape[] = {"",0.1,1};
+};
 
 class ListBox
 {
@@ -45,7 +73,7 @@ class ListBox
 	w = 0.4;
 	h = 0.4;
 	font = GUI_FONT_NORMAL;
-	sizeEx = 0.04;
+	sizeEx = GUI_TEXT_SIZE_NORMAL;
 	rowHeight = 0;
 	colorText[] = RGB_ARR_White;
 	colorScrollbar[] = RGB_ARR_White;

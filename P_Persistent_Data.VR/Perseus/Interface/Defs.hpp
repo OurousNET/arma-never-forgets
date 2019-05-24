@@ -131,6 +131,9 @@
 #define GUI_FONT_NARROW			EtelkaNarrowMediumPro
 #define GUI_FONT_CODE			LucidaConsoleB
 #define GUI_FONT_SYSTEM			TahomaB
+#define GUI_TEXT_SIZE_NORMAL	0.04
+#define GUI_TEXT_SIZE_HEAVY		0.05
+#define GUI_TEXT_SIZE_HUGE		0.08
 
 // Grids
 #define GUI_GRID_CENTER_WAbs		((safezoneW / safezoneH) min 1.2)

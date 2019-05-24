@@ -26,7 +26,7 @@ class AttrName : Text
 	sizeEx = 0.06;
 }
 
-class PlusButton : Button
+class PlusButton : ActiveText
 {
 	style = ST_PICTURE + ST_KEEP_ASPECT_RATIO;
 	x = "safezoneX + 0.65 * safezoneW";
@@ -36,7 +36,7 @@ class PlusButton : Button
 	onButtonClick = "[(ctrlIDC (_this select 0)) % 10, 1] call perseus_fnc_ui_handleStatChange;";
 }
 
-class MinusButton : Button
+class MinusButton : ActiveText
 {
 	style = ST_PICTURE + ST_KEEP_ASPECT_RATIO;
 	x = "safezoneX + 0.6 * safezoneW";
@@ -100,7 +100,7 @@ class CharacterSheet
 			h = 2 * GUI_GRID_H;
 		};
 		
-		class Apply : Button
+		class Apply : ActiveText
 		{
 			style = ST_PICTURE;
 			idc = 141;
@@ -112,7 +112,7 @@ class CharacterSheet
 			onButtonClick = "disableSerialization; _ctrl = _this select 0; _ctrl ctrlEnable false; _ctrl ctrlSetText 'Perseus\Interface\Textures\APPLY_DISABLED.paa'; perseus_val_currentPlayerAttributes = +perseus_val_possiblePlayerAttributes;";
 		};
 		
-		class Reset : Button
+		class Reset : ActiveText
 		{
 			style = ST_PICTURE;
 			idc = 142;

@@ -6,15 +6,15 @@ params [
 uiNamespace setVariable ["perseus_val_ui_activeDisplay", _disp];
 //init buttons
 
-hint format["%1", count (allControls _disp)];
+//hint format["%1", count (allControls _disp)];
 
 //important controls
 _mapCtrl = _disp displayCtrl 101;
 _listCtrl = _disp displayCtrl 100;
 
 
-_mapCtrl call perseus_fnc_ui_asyncMapListener;
 _listCtrl call perseus_fnc_ui_refreshPlayerList;
+_mapCtrl call perseus_fnc_ui_asyncMapListener;
 
 /*
 ["perseus_fnc_ui_refreshPlayerList@onPlayerConnected", "onPlayerConnected", {
